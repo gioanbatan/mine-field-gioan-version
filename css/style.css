@@ -8,6 +8,7 @@
 :root {
     /* colors */
     --bg-color: #aa4040;
+    --cell-color: #aaaaaa;
 }
 
 body {
@@ -16,4 +17,28 @@ body {
 
 html {
     font-size: 100%;
+}
+
+/* MAIN */
+main {
+    padding: 2rem;
+
+}
+.cell-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vh;
+    /* height: 80vh; */
+
+    margin: 1rem auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(80vh / 10);
+    height: calc(80vh / 10);
+    border: 1px solid var(--cell-color);
 }
